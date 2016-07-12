@@ -54,3 +54,14 @@ body {
   margin: 40px auto 60px auto;
   padding: 0;
 }
+
+h1 {
+	font-size: 2em;
+	font-weight: 900;
+	color: aliceblue;
+	letter-spacing: 2px;
+	background: midnightblue;
+	padding: 10px 0;
+	text-transform: uppercase;
+	text-align: center;
+}
