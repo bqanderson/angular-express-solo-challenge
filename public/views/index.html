@@ -9,9 +9,42 @@
     <title>Olympic Sports Team All-Stars</title>
   </head>
   <body ng-controller="AthleteController">
-    <h1>This is where the Stars come to shine!</h1>
-    {{ 3 * 2 }}
-
-    <p>Things that make you go Hmmm....</p>
+    <div class="container">
+      <div class="header">
+        <h1>Where the Stars come to shine!</h1>
+      </div>
+      <div id="allstar">
+        <button class="allstar" ng-click="buildList()">All Stars</button>
+      </div>
+      <div class="athleteList" ng-show="clicked">
+        <ul class="sportContainer">
+          <li class="sport">
+            <h3 class="sportName">Sport: Badminton</h3>
+            <p class="athlete">{{badminton.name}}</p>
+            <p class="hometown">{{badminton.hometown}}</p>
+          </li>
+          <li class="sport">
+            <h3 class="sportName">Sport: Fencing</h3>
+            <p class="athlete">{{fencing.name}}</p>
+            <p class="hometown">{{fencing.hometown}}</p>
+          </li>
+          <li class="sport">
+            <h3 class="sportName">Sport: Equestrian</h3>
+            <p class="athlete">{{equestrian.name}}</p>
+            <p class="hometown">{{equestrian.hometown}}</p>
+          </li>
+          <li class="sport">
+            <h3 class="sportName">Sport: Archery</h3>
+            <p class="athlete">{{archery.name}}</p>
+            <p class="hometown">{{archery.hometown}}</p>
+          </li>
+          <li class="sport">
+            <h3 class="sportName">Sport: Sailing</h3>
+            <p class="athlete">{{sailing.name}}</p>
+            <p class="hometown">{{sailing.hometown}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
